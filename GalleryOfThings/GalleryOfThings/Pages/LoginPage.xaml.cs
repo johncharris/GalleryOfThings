@@ -11,11 +11,9 @@ namespace GalleryOfThings.Pages
 {
     public partial class LoginPage : ContentPage
     {
-        public LoginPage()
+        public LoginPage ()
         {
-            InitializeComponent();
-
-            BindingContext = new LoginViewModel(this);
+            InitializeComponent ();
         }
     }
 }

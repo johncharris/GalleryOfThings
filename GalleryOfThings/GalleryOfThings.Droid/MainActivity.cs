@@ -12,19 +12,19 @@ using FFImageLoading.Forms.Droid;
 
 namespace GalleryOfThings.Droid
 {
-    [Activity(Label = "Gallery Of Things", Icon = "@drawable/icon", MainLauncher = true, ConfigurationChanges = ConfigChanges.ScreenSize | ConfigChanges.Orientation, Theme = "@style/MyTheme")]
+    [Activity (Label = "Gallery Of Things", Icon = "@drawable/icon", MainLauncher = true, ConfigurationChanges = ConfigChanges.ScreenSize | ConfigChanges.Orientation, Theme = "@style/MyTheme")]
     public class MainActivity : FormsAppCompatActivity
     {
-        protected override void OnCreate(Bundle bundle)
+        protected override void OnCreate (Bundle savedInstanceState)
         {
             ToolbarResource = Resource.Layout.toolbar;
             TabLayoutResource = Resource.Layout.tabs;
 
-            CachedImageRenderer.Init();
+            CachedImageRenderer.Init ();
 
-            base.OnCreate(bundle);
-            global::Xamarin.Forms.Forms.Init(this, bundle);
-            LoadApplication(new App());
+            base.OnCreate (savedInstanceState);
+            global::Xamarin.Forms.Forms.Init (this, savedInstanceState);
+            LoadApplication (new App ());
         }
     }
 }

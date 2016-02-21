@@ -140,6 +140,14 @@
       <HintPath>..\..\packages\Xamarin.FFImageLoading.2.0.6\lib\Xamarin.iOS10\FFImageLoading.Touch.dll</HintPath>
       <Private>True</Private>
     </Reference>
+    <Reference Include="FreshIOC, Version=1.0.5886.28288, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\FreshMvvm.1.0.0\lib\FreshIOC.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="FreshMvvm, Version=1.0.5886.28288, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\FreshMvvm.1.0.0\lib\FreshMvvm.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
     <Reference Include="ModernHttpClient, Version=2.4.2.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\..\packages\modernhttpclient.2.4.2\lib\Xamarin.iOS10\ModernHttpClient.dll</HintPath>
       <Private>True</Private>

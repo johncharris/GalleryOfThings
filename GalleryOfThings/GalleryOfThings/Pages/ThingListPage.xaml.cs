@@ -11,12 +11,9 @@ namespace GalleryOfThings.Pages
 {
     public partial class ThingListPage : ContentPage
     {
-        public ThingListPage()
+        public ThingListPage ()
         {
-            InitializeComponent();
-
-
-            this.BindingContext = new ThingListViewModel(this);
+            InitializeComponent ();
         }
     }
 }

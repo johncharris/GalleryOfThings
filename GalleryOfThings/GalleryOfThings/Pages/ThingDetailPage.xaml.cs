@@ -12,11 +12,9 @@ namespace GalleryOfThings.Pages
 {
     public partial class ThingDetailPage : ContentPage
     {
-        public ThingDetailPage(Thing thing)
+        public ThingDetailPage()
         {
             InitializeComponent();
-
-            BindingContext = new ThingDetailViewModel(this, thing);
         }
     }
 }

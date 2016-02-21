@@ -159,6 +159,14 @@
       <HintPath>..\..\packages\FFImageLoading.Windows.2.0.6\lib\portable-netcore45+wpa81\FFImageLoading.Windows.dll</HintPath>
       <Private>True</Private>
     </Reference>
+    <Reference Include="FreshIOC, Version=1.0.5886.28288, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\FreshMvvm.1.0.0\lib\FreshIOC.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="FreshMvvm, Version=1.0.5886.28288, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\FreshMvvm.1.0.0\lib\FreshMvvm.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
     <Reference Include="Plugin.Media, Version=2.2.0.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\..\packages\Xam.Plugin.Media.2.3.0\lib\win8\Plugin.Media.dll</HintPath>
       <Private>True</Private>
