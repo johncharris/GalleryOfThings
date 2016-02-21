@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage
+		xmlns="http://xamarin.com/schemas/2014/forms"
+		xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+		x:Class="GalleryOfThings.Pages.LoginPage">
+	<ContentPage.Padding>
+		<OnPlatform x:TypeArguments="Thickness"
+				iOS="16.0, 20.0, 16.0, 0.0"
+				Android="16.0, 0.0, 16.0, 0.0"
+				WinPhone="16.0, 0.0, 16.0, 0.0" />
+	</ContentPage.Padding>
+		<StackLayout
+			VerticalOptions="Center"
+			Spacing="8" >
+				<Entry x:Name="userNameEntry"
+					Keyboard="Email"
+					Placeholder="Username" />
+				<Entry x:Name="passwordEntry"
+					Placeholder="Password"
+					IsPassword="true" />
+				<Button Command="{Binding LoginCommand}"
+					Text="Login"
+					HorizontalOptions="Center"
+					VerticalOptions="Center"/>
+		</StackLayout>
+</ContentPage>

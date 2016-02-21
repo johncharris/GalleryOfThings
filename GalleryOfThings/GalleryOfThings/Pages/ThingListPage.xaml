@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="GalleryOfThings.Pages.ThingListPage"
+             xmlns:ffimageloading="clr-namespace:FFImageLoading.Forms;assembly=FFImageLoading.Forms">
+  <ContentPage.ToolbarItems>
+    <ToolbarItem Text="Add" Command="{Binding AddThingCommand}"/>
+  </ContentPage.ToolbarItems>
+  <Grid>
+    <Grid.RowDefinitions>
+      <RowDefinition Height="Auto" />
+      <RowDefinition Height="*" />
+      <RowDefinition Height="Auto" />
+    </Grid.RowDefinitions>
+    <SearchBar Placeholder="Search for things" Text="{Binding FilterText}" />
+
+    <ListView x:Name="listView" ItemsSource="{Binding FilteredThings}" SelectedItem="{Binding SelectedThing}" HasUnevenRows="true" Grid.Row="1">
+      <ListView.ItemTemplate>
+        <DataTemplate>
+          <ViewCell>
+            <StackLayout Orientation="Horizontal">
+              <ffimageloading:CachedImage WidthRequest="100" HeightRequest="100"
+            DownsampleToViewSize="true"
+            Source="{Binding DefualtPhotoUri}"/>
+              <Label Style="{DynamicResource ListItemTextStyle}" Text="{Binding Name}" />
+            </StackLayout>
+          </ViewCell>
+        </DataTemplate>
+      </ListView.ItemTemplate>
+    </ListView>
+
+    <Button Text="Take Photo" IsVisible="{Binding IsTakePhotoVisible}" Grid.Row="2"/>
+  </Grid>
+</ContentPage>

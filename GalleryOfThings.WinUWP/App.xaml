@@ -1,0 +1,8 @@
+﻿<Application
+    x:Class="GenericPhotos.WinUWP.App"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:GenericPhotos.WinUWP"
+    RequestedTheme="Light">
+
+</Application>
